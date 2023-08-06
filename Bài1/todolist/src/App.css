@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap");
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway";
+}
+
+html,
+body,
+#root {
+  padding: 0px;
+  margin: 0px;
+  background-color: #dedede;
+}
+
+.App {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container {
+  width: 600px;
+  height: fit-content;
+  border: 1px solid #ececec;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+
+.header {
+  border-radius: 12px 12px 0px 0px;
+  padding: 10px;
+  background-color: #e1e1e1;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.checkbox-container {
+display: flex;
+align-self: center;
+margin-top: 10px;
+}
+
+.todo-list-container {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: fit-content;
+}
+
+.todo-item-container {
+  border-bottom: 1px solid #ececec;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 100;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  
+}
+
+.todo-item-container.done {
+  color: #9a9a9a;
+  text-decoration: line-through;
+}
+
+.itemList {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.item-title {
+  margin-left: 20px;
+  font-weight: 400;
+  color: #817d7d;
+}
+
+.item-duedate {
+  font-weight: 400;
+  color: #817d7d;
+}
+
+.item-done-button {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.item-done-button:hover {
+  background-color: #cdcdcd;
+}
+
+.form {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form > .taskInput {
+  flex: 1;
+  margin-right: 10px;
+  padding: 8px 16px;
+  outline-color: #9a9a9a;
+  border: 1px solid #dcdcdc;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.dateInput {
+  margin-right: 10px;
+  padding: 8px 16px;
+  outline-color: #9a9a9a;
+  background-color: white;
+  border: 1px solid #dcdcdc;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  width: 200px !important;
+}
+
+.calendar-container {
+  position: absolute;
+  left: 650px;
+}
+
+.form > button {
+  padding: 8px 16px;
+  font-size: 16px;
+  font-weight: 100;
+  border: 1px solid #dcdcdc;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.form > button:hover {
+  background-color: #dcdcdc;
+}
+
+.languague-picker {
+  margin: auto 8px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.languague-picker:hover {
+  opacity: 1;
+}
+
+.languague-picker.selected {
+  opacity: 1;
+  color: black;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
